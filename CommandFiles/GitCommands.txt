@@ -28,4 +28,4 @@ git checkout branchname : to switch branches
 
 adding feature branches : feature/logochanges
                          : feature/Securityupdates
- 
+ git pull : to get the updated github repo
