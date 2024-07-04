@@ -2,7 +2,7 @@
 
 
 Linux commands
-
+mkdir <directory name> : to create a folder in linux
 ls -la :To see all files in the directory
 cd /  : To switch to the slash path
 cd ~  : To switch to the tilt path
