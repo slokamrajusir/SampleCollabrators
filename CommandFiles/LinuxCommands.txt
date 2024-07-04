@@ -1,0 +1,40 @@
+
+
+
+Linux commands
+
+ls -la :To see all files in the directory
+cd /  : To switch to the slash path
+cd ~  : To switch to the tilt path
+cd ..  : Go to previous directory
+cd <DirectoryName>  : Go to specific directory
+sudo -i  : Change to root user
+touch <FileName> : to create an empty file 
+touch file1 file2 file3 : to create multiple files with one click
+touch file{1..1000} : to create 1000 files with one click
+
+vi <fileName> : to create a file and write data into it
+Esc + i : for insert mode
+Esc + :wq! -- to save the file
+Esc + :se nu --- to give numbers to eachlines of the file
+Esc + yy -- to copy a line
+Esc + p -- to paste the copied stuff
+Esc + 7yy -- to copy 7 lines form the cursor
+Esc + dd -- to delete a line
+Esc + 7dd -- to delete 7 lines
+Esc + G --- the cursor moves to last line
+Esc + H --- the cursor moves to First line
+Esc + / --- to search data in the file
+
+cp <filename> -r <path> : copies the file and pastes in the target path
+mv <filename> -f <path> : moves the file to the path
+
+visudo --- to give ubuntu to give permissions to change the files and read write permissions
+For ubuntu user: sudo chmod 777 <FileName> ---- to give rwxrwxrwx
+		read : 4 , write : 2 , execute : 1
+we have to give sum of each types to give permissions to users, groups and others
+
+
+
+  
+

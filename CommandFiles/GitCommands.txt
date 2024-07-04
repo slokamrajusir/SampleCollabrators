@@ -1,0 +1,31 @@
+
+GitCommands
+
+git init : To initilialise git process
+git clone <url of github repository> : To establish link between git and github
+
+git stages---
+
+Workspace  -- git add . ------------>   StagingArea -- git commit -m "Commit message" --->                 LocalRepository
+	   <-- git reset HEAD (filename)            <------------------- git reset --soft previouscommitid----
+
+git reset --mixed previouscommitid : directly revert to the workspace from local repository
+
+git log : to show commit history
+git show commitid : to get more information about commited file
+
+git status : to know in which stage our file is 
+	untrackedfiles --- workspace
+	changes to be commited --- staging area
+	working tree clean ----- local repository
+
+git push : to commad to send changes to github from main branch 
+git push origin branchname : to commad to send changes to github from another branch
+
+git branch : to see all branches
+git branch branchname : to create new branch by pointing main branch
+git checkout branchname : to switch branches
+
+adding feature branches : feature/logochanges
+                         : feature/Securityupdates
+ 
