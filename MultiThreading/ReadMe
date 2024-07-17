@@ -1,0 +1,41 @@
+Why we need Multithreading?
+
+In our daily scenario, we use Spotify to listen Music, along with texting someone on whatsapp, there are some essential things are running in the background,
+which facilitates the smooth functioning of Android Mobile.
+
+Here comes the concept of task.
+
+Lets say i want to send an email to my friend from gmail application, and send a text message from whatsapp to another friend
+Here there are two Tasks to execute.
+I need to do that tasks simultaneusly.
+Thats why i assign each task to two different persons.They work independently to complete their task.
+Even if one person come across a problem in executing their task, it has no influence on other person's task.
+
+Now replace the two persons with THREADS. We assigned two different tasks to two different threads,
+which works independently, this entire process is called multithreading.
+
+1)MultiProcessing
+2)Multitasking
+3)MultiThreading
+
+Multiprocessing is running different processes for different applications in logical memory of our computer.
+Each process in multiprocessing contains atleast a thread to do some work.
+
+Thread Creation:
+1)Extending the Thread class and overridding the run method  to put our task in that runmethod.
+2)Implementing the Runnable interface, and wrapping that interface object with the Thread object.
+
+TimeSharing or TimeSlicing:
+1)When multiple threads are doing their work concurrently, the cpu allots time alternatively to each process to 
+do their work. Because of the small magnitude of the time , we think that all processes run At The time.
+
+HOW THE Thread IS Created?
+When we call start() method of a thread object, the jvm requests the native methods of OS to create a thread
+for us. After creation of thread, jvm gets the reference of Newly created Thread.
+Each thread will have CallStack Associated with it and Program Counter register Associated withit.
+After thread creation, the start method internally calls the run() method, in which  our task code presents.
+
+
+ 
+
+
