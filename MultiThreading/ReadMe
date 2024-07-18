@@ -35,6 +35,22 @@ for us. After creation of thread, jvm gets the reference of Newly created Thread
 Each thread will have CallStack Associated with it and Program Counter register Associated withit.
 After thread creation, the start method internally calls the run() method, in which  our task code presents.
 
+Synchronisation:
+Synchronisation is a process which prevents Race Condition among threads when they are trying to access a Shared Resource
+Two types:
+1)Static Synchronisation
+2) Object level synchronisation
+3)Synchronised Block
+
+
+============================= Most important ================================
+
+Difference between Sleep() and wait()
+
+Thread goes to sleep along with LOCK and dont let other threads execute the same task
+But when we made a thread to be wait() then, before entering into wait state, the thread releases the LOCK.
+Other threads which are lined for acquire the lock released by the previous thread... 
+
 
  
 
