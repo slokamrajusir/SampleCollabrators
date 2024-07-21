@@ -26,8 +26,8 @@ Esc + G --- the cursor moves to last line
 Esc + H --- the cursor moves to First line
 Esc + / --- to search data in the file
 
-cp <filename> -r <path> : copies the file and pastes in the target path
-mv <filename> -f <path> : moves the file to the path
+cp  -r  <filename> <path> : copies the file and pastes in the target path
+mv -f <filename>  <path> : moves the file to the path
 
 visudo --- to give ubuntu to give permissions to change the files and read write permissions
 For ubuntu user: sudo chmod 777 <FileName> ---- to give rwxrwxrwx
