@@ -1,0 +1,91 @@
+Docker commands
+
+Docker is a containerization tool
+
+docker --version -- to check whether which version works
+docker search ubuntu -- to search ubuntu images from dockerhub
+docker pull ubuntu -- to pull image from dockerhub
+Now image pulled from dockerhub libraries
+
+docker images -- to check how many images 
+docker run -itd ubuntu -- to convert an image into container
+docker ps -a -- to see containers list
+docker attach containerid -- to login to container
+
+docker as Operating System
+docker as server
+docker as a technology repository
+
+
+docker start containerid -- to start an existing container
+
+docker rm -f containerid -- to delete a container
+docker rmi imageid -- to delete an image
+
+Converting our Working container into a Docker image and save that one on DockerHub
+Container ---------->>>>>>> Into Our Own Image and place in dockerhub Area
+This process is called DOCKER LIFE CYCLE
+
+To convert a container to image to store in a dockerhub
+
+docker commit containerid dockerusername/repositoryname
+
+A new image will be created in the images section
+
+Next we have to login into docker
+docker login
+
+login using username and password
+
+docker push giridharan789/firstdockerrepo
+docker pull giridharan789/firstdockerrepo
+
+Docker file format
+
+Name should be Dockerfile
+FROM imagename
+MAINTAINER gmail
+
+Command to build
+
+docker build -t "Imagename we want " .
+
+Next Usage of Docker as Server
+First clone git repo from github where the docker environment has
+
+
+Now we will look into how to deploy .war file into docker
+
+create a docker file in the maven project
+
+Docker file format
+===================================
+
+FROM tomcat:8.0.20-jre8
+MAINTAINER balinenigiridharnaidu@gmail.com
+COPY target/ThirdMavenProject-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ThirdMavenProject-0.0.1-SNAPSHOT.war
+===================================
+
+now we want to build the file
+
+docker build -t "imagenamewithoutgaps" .
+
+Command to launch a server
+
+docker run -d -p 8080:8080 --name livermore dockerdeployment
+
+here d means detached
+p means publish the port number 8080
+name the container as livermore 
+which image we should use is dockerdeployment
+
+Now, we have to change the security settings to enable port range in our AWS instance
+Enter into Security section of Aws instance, edit In-Bound rules, and select All TCP
+port range 0 to 65535, and 00.000 some related setting and save it.
+
+Then , enter the public ipaddress of aws instance : 8080 in the chrome
+you will enter into server, now paste the war file name in the address bar at the end of 
+ip address.
+
+
+
