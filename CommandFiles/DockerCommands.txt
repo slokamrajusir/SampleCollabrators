@@ -10,7 +10,7 @@ Now image pulled from dockerhub libraries
 docker images -- to check how many images 
 docker run -itd ubuntu -- to convert an image into container
 docker ps -a -- to see containers list
-docker attach containerid -- to login to container
+docker attach containerid -- to login to container or to login to another linux operating system
 
 docker as Operating System
 docker as server
